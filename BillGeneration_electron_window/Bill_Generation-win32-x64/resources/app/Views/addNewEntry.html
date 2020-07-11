@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../Styles/commonStyles.css">
+    <title>Generate Bill</title>
+    <script src="js/util.js"></script>
+</head>
+
+<body>
+    <!-- title bar -->
+    <div class="row titleBar align-items-center">
+        <img src="../node_modules/bootstrap-icons/icons/question-square-white-fill.svg" 
+             class="appIcon">
+        <div class="col-11 titleBarText">
+            Bill Management
+        </div>
+        
+        <img id="closeBtn"
+             src="../node_modules/bootstrap-icons/icons/x-white.svg" 
+             class="crossIcon">
+    </div>
+
+    <!-- all content of window goes here -->
+    <div class="windowContent" id="content" style="width: 450px !important; height: 300px;">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-4">			
+                    <label for="invoiceNumber">Invoice Number:</label>
+                </div>
+                <div class="col-4">
+                    <input type="text" name="invoiceNumber" id="invoiceNumberInput">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-4">			
+                    <label for="dateInput">Select Date</label>
+                </div>
+                <div class="col-4">
+                    <input type="date" name="dateInput" id="dateInput">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-4">			
+                    <label for="partyName">Party Name:</label>
+                </div>
+                <div class="col-4">
+                    <input type="text" name="partyName" id="partyNameInput">
+                </div>
+            </div>
+        
+            <div class="row">
+                <div class="col-4">			
+                    <label for="gstn">GSTN:</label>
+                </div>
+                <div class="col-4">
+                    <input type="text" name="gstn" id="gstnInput">
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-3">			
+                    <label for="gstRate">GST Rate:</label>
+                </div>
+                <div class="col">
+                    <input type="radio" name="gstRate" value="5" id = "rate_5"> 5%<br>
+                </div>
+                <div class="col">
+                    <input type="radio" name="gstRate" value="12" id = "rate_12"> 12%<br>
+                </div>
+                <div class="col">
+                    <input type="radio" name="gstRate" value="18" id = "rate_18"> 18%<br>
+                </div>
+                <div class="col">
+                    <input type="radio" name="gstRate" value="28" id = "rate_28"> 28%<br>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-4">			
+                    <label for="amount">Amount:</label>
+                </div>
+                <div class="col-4">
+                    <input type="text" name="amount" id="amountInput">
+                </div>
+            </div>
+        
+            <div class="row mt-4">
+                <div class="col-4">			
+                    <label for="totalAmount">Total Amount</label>
+                </div>
+                <div class="col-5">
+                    <input type="text" name="totalAmount" id="totalAmountInput">
+                </div>
+                
+                <div class="col-3">
+                    <button  style="height: 25px; text-align: center;" class="btn bg-light" id="calculateButton" onclick="calculate()">Calculate</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- renderer script and other script goes here --> 
+    <script>
+        // require('../Scripts/renderer.js')
+    </script>
+    <!-- <script src="../node_modules/p5/lib/p5.min.js"></script>
+    <script src="../Scripts/spinner_renderer.js"></script> -->
+
+</body>
+
+</html>

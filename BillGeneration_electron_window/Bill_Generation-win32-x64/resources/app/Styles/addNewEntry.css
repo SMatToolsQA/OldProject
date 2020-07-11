@@ -1,0 +1,20 @@
+@import 'node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+.darkThemeWindow {
+    background-color: #292C31 !important;
+    overflow: hidden;
+}
+
+.titleBarText {
+    color: lightgray;
+    font-size: 12px;
+    -webkit-app-region:drag; 
+}
+
+.close:hover{
+  color: red !important;
+}
+
+.close{
+    color: white !important;
+}

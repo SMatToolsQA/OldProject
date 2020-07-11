@@ -1,0 +1,20 @@
+
+.statusBar{
+    position: absolute;
+    bottom: 0px;
+    height: 1.5rem;
+    width: 100%;
+    background-color: #104589;
+}
+
+.btn{
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 15px !important;
+}
+
+.btn:hover{
+    width: 160px !important;
+    height: 160px !important;
+    background-color: #5f5f64 !important;
+}

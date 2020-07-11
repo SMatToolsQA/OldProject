@@ -1,0 +1,47 @@
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(68, 68, 68) !important;
+}
+
+.windowContent{
+    position: absolute;
+    top: 1.75rem;
+    bottom: 0px;
+    width: 100%;
+    background-color: #262627;
+}
+
+.titleBar {
+    width: 100% !important; 
+    height: 1.75rem;
+    margin: 0rem !important;
+    color: lightgray !important;
+    -webkit-app-region:drag; 
+}
+
+.appIcon{
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-left: 0.25rem;
+}
+
+.titleBarText{
+    padding-left: 0.45rem !important;
+    font-size: 0.85rem;
+}
+
+.crossIcon{
+    height: 1.25rem;
+    width: 1.25rem;
+    margin-left: 10px !important;
+}
+
+.crossIcon:hover{
+    height: 1.5rem;
+    width: 1.5rem;
+}

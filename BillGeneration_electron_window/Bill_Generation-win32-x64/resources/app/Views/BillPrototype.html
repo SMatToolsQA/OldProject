@@ -1,0 +1,129 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../Styles/commonStyles.css">
+        <link rel="stylesheet" href="../Styles/billPrototypeStyles.css">
+        <title>Bill Prototype</title>
+    </head>
+    <body>
+        <page size="A4">
+            <div class="container" style="height: 100%; border: 2px solid black;">
+
+                <div id="header" class="row" style="border-bottom: 1px solid black; height: 3.2cm;">
+                    <div class="col-2">
+                        <img id="companyIcon" src="../node_modules/bootstrap-icons/icons/square-fill.svg"
+                        style="height: 3cm !important;">
+                    </div>
+                    <div class="col-10" style="padding: 0.75rem 1.25rem;">
+                        <h2 id="companyName" style="padding-bottom: 0.25rem; border-bottom: 1px solid
+                         black; text-align: center;"></h2>
+                        <h6 id="address" style="margin: 0.5rem 1rem; margin-top: -0.2rem; text-align: center;"></h6>
+                        <div class="row">
+                            <div class="col-6">
+                                <h6 style="margin-left: 1rem; margin-top: -0.5rem;">
+                                    <span style="font-weight: 650;">Email: </span>
+                                    <span id="emailID"></span>
+                                </h6>
+                            </div>
+                            <div class="col-6">
+                                <h6 style="margin-right: 1rem; margin-top: -0.5rem; text-align: right;">
+                                    <span style="font-weight: 650;">Contact:</span> 
+                                    <span id="contact"></span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="buyerDetails" class="row" style="border-bottom: 1px solid black; height: 4.35cm;">
+                    <div class="col-8" style="padding:0.5rem 1rem; border-right: 1px solid black;">
+                        <h5 style="font-weight: 700;">To,</h5>
+                        <div class="container">
+                            <h5><span id="buyerName"></span><span>,</span></h5>
+                            <h5 style="margin-top: -0.4rem; font-weight: 400;">
+                                <span id="addressLine1"></span>
+                            </h5>
+                            <h5 style="margin-top: -0.4rem; font-weight: 400;">
+                                <span id="addressLine2"></span>
+                            </h5>
+                            <h5 style="margin-top: -0.4rem; font-weight: 400;">
+                                <span id="addressLine3"></span>
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="col-4" style="padding:0.75rem 1rem;">
+                        <h5>
+                            <span style="font-weight: 700;">Order Id:</span>
+                            <span id="orderID"></span>
+                        </h5>
+                        <h5 style="margin-top: -0.4rem;">
+                            <span style="font-weight: 700;">Date:</span> 
+                            <span id="date"></span>
+                        </h5>
+                    </div>
+                </div>
+
+
+
+                <div id="orderDetails" class="row" style=" border-bottom: 1px solid black; height: 16.75cm;">
+                    <div class="col-12">
+                        <table class="table table-bordered" style="width: 104.5%; margin-left: -0.9rem;">
+                            <col width="10%">
+                            <col width="50%">
+                            <col width="10%">
+                            <col width="15%">
+                            <col width="15%">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">
+                                        <div>Sr.</div>
+                                        <div style="margin-top: -0.5rem;">No.</div>
+                                    </th>
+                                    <th scope="col">Description</th>
+                                    <th scope="col">Qty.</th>
+                                    <th scope="col">Unit Price</th>
+                                    <th scope="col">Amount</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <th>1</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>2</th>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+
+                <div id="total" class="row" style="border-bottom: 1px solid black; height: 1.25cm;">
+                </div>
+
+
+                <div id="footer" class="row" style="height: 2.8cm;">
+                    <div class="col-6" style="border-right: 1px solid black;">
+                        <span id="terms" style="font-weight: 400; font-size: x-small; line-height: 50%;"></span>
+                    </div>
+                    <div class="col-6">
+                        <h5 style="position: absolute; bottom: 0.05cm; width: 100%; text-align: center;">
+                            <span id="companyNameForFooter"></span>
+                        </h5>
+                    </div>
+                </div>
+
+            </div>
+        </page>
+
+        <script src="../Scripts/BillPrototype_renderer.js"></script>
+    </body>
+</html>

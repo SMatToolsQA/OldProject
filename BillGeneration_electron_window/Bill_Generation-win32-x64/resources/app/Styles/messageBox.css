@@ -1,0 +1,25 @@
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.titleBar{
+    background-color: #0069D9;
+}
+
+.windowContent{
+    background-color: rgb(65, 64, 64);
+}
+
+.navigationBtns{
+    position: absolute;
+    bottom: 0.5rem;
+    right: 1.25rem;
+}
+
+.messageText{
+    color: lightgray !important;
+    font-size: 0.85rem;
+    margin: 1rem;
+}

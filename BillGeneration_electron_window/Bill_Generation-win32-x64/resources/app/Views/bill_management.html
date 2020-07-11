@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../Styles/mainWindowStyles.css">
+        <link rel="stylesheet" href="../Styles/commonStyles.css">
+    
+        <title>Bill Management</title>
+    </head>
+    <body>
+        <!-- title bar -->
+        <div class="row titleBar align-items-center">
+            <img src="../node_modules/bootstrap-icons/icons/question-square-white-fill.svg" 
+                 class="appIcon">
+            <div class="col-11 titleBarText">
+                Bill Management
+            </div>
+            
+            <img id="closeBtn"
+                 src="../node_modules/bootstrap-icons/icons/x-white.svg" 
+                 class="crossIcon">
+        </div>
+
+        <!-- all content of window goes here -->
+        <div class="windowContent" id="content">
+            <button type="button" class="btn btn-dark">Dark</button>
+        </div>
+
+        <!-- all statuses will be displayed here -->
+        <div class="statusBar">
+
+        </div>
+
+
+        <!-- renderer script and other script goes here --> 
+        <script>
+            require('../Scripts/renderer.js')
+        </script>
+        <!-- <script src="../node_modules/p5/lib/p5.min.js"></script>
+        <script src="../Scripts/spinner_renderer.js"></script> -->
+
+    </body>
+</html>
+
+
+            <!-- <button id="errorBtn">Display Error</button> -->

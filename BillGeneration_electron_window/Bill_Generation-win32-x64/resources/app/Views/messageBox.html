@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../Styles/commonStyles.css">
+        <link rel="stylesheet" href="../Styles/messageBox.css">
+        <title>Information</title>
+    </head>
+    <body id="messageBoxBody">
+        <!-- title bar -->
+        <div class="row titleBar align-items-center">
+            <img src="../node_modules/bootstrap-icons/icons/info-square-fill-white.svg" 
+                 class="appIcon">
+            <div id="Title" class="col-11 titleBarText">
+                Information
+            </div>
+            
+            <img id="closeBtn"
+                 src="../node_modules/bootstrap-icons/icons/x-white.svg" 
+                 class="crossIcon">
+        </div>
+
+        <!-- all content of window goes here -->
+        <div class="windowContent">
+            <div id="Message" class="messageText">
+                Do you really want to exit?
+            </div>
+
+            <div class="row navigationBtns">
+                <button id="yesBtn" class="btn btn-light">Yes</button>
+                <button id="noBtn" class="btn btn-light">No</button>
+                <button id="cancelBtn" class="btn btn-light align-items-center"><span>Cancel</span></button>
+            </div>
+        </div>
+
+        <!-- renderer script and other script goes here --> 
+        <script>
+            require('../Scripts/messageBox_renderer.js');
+        </script>
+    </body>
+</html>
+
+
+            <!-- <button id="errorBtn">Display Error</button> -->
